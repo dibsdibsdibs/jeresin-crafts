@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+  --white: #EBE8E7;
+  --loulou: #5A2D48;
+  --charm: #CB7687;
+  --wax: #F0ACA1;
+  --trendy: #8E608D;
+}
