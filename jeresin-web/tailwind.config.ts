@@ -21,6 +21,9 @@ const config: Config = {
       'wax': '#F0ACA1',
       'trendy': '#8E608D',
     },
+    fontFamily: {
+      'montserrat': ['Montserrat'],
+    },
   },
   plugins: [],
 }
