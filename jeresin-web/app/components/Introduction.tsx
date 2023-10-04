@@ -5,7 +5,6 @@ export default function Introduction(){
     return(
         <div className="flex bg-charm text-loulou font-semibold text-4xl">
             <Image
-                className=""
                 src='/intro.jpg'
                 width={300}
                 height={300}
