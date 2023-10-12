@@ -20,7 +20,7 @@ export default function Header() {
                     Collections
                 </Link>
                 <Link 
-                    href="/"
+                    href="../about"
                     className='block mt-4 lg:inline-block lg:mt-0 mr-4'
                 >
                     About
