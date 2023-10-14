@@ -1,5 +1,5 @@
 import Banner from './components/Banner'
-import Featured from './components/Featured'
+import Teaser from './components/Teaser'
 import Introduction from './components/Introduction'
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
       <div>
         <Banner />
         <Introduction />
-        <Featured />
+        <Teaser />
       </div>
     </div>
   )
