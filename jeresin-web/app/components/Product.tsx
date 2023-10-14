@@ -1,6 +1,6 @@
 import Image from "next/image"
 
-export default function Spotlight(){
+export default function Product(){
     const name = 'name'
     const price = 'price'
 

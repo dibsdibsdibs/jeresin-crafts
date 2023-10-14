@@ -14,7 +14,7 @@ export default function Header() {
                     Home
                 </Link>
                 <Link 
-                    href="/"
+                    href="../collections"
                     className='block mt-4 lg:inline-block lg:mt-0 mr-4'
                 >
                     Collections

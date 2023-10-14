@@ -1,16 +1,17 @@
-import Spotlight from "./Spotlight";
-import Button from "./Button";
-import TextHeader from "./TextHeader";
+import TextHeader from "./TextHeader"
+import Button from "./Button"
+import Product from "./Product"
 
 export default function Featured(){
+    const featname = "Featured Collection"
+
     return(
         <div className="flex flex-col items-center p-5">
             <TextHeader text="FEATURED" />
-            <p className="font-bold text-4xl text-loulou mt-2.5">Featured Collection</p>
+            <p className="font-bold text-4xl text-loulou mt-2.5">{featname}</p>
             <div className="p-10">
-                <Spotlight />
+                <Product />
             </div>
-            <Button label="View From Collections" />
         </div>
     )
 }
