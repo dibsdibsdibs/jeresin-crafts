@@ -20,16 +20,16 @@ export default function Header() {
                     Collections
                 </Link>
                 <Link 
+                    href="/"
+                    className='block mt-4 lg:inline-block lg:mt-0 mr-4'
+                >
+                    Customize
+                </Link>
+                <Link 
                     href="../about"
                     className='block mt-4 lg:inline-block lg:mt-0 mr-4'
                 >
                     About
-                </Link>
-                <Link 
-                    href="/"
-                    className='block mt-4 lg:inline-block lg:mt-0 mr-4'
-                >
-                    Contact
                 </Link>
             </div>
             <div className="flex space-x-4">

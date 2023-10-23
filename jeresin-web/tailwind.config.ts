@@ -20,6 +20,7 @@ const config: Config = {
       'charm': '#CB7687',
       'wax': '#F0ACA1',
       'trendy': '#8E608D',
+      'sakura': '#F7D0CA',
     },
     fontFamily: {
       'montserrat': ['Montserrat'],
