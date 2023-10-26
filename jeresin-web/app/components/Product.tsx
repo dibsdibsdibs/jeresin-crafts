@@ -13,7 +13,7 @@ export default function Product(){
                 height={300}
                 alt="" 
             />
-            <div className="font-bold text-center text-white">
+            <div className="font-bold text-center text-white gap">
                 <h3 className="text-3xl">{name}</h3>
                 <p className="text-lg">{price}</p>
             </div>

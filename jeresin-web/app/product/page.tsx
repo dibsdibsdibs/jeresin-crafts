@@ -7,8 +7,8 @@ import Counter from "../components/Counter"
 export default function ProductDisp(){
     return(
         <div className="text-loulou p-10">
-            <div className="flex flex-row">
-                <div>
+            <div className="grid grid-cols-2 place-items-center">
+                <div className="justify-center">
                     <Image
                         className=""
                         src="/col-aqua/1.jpg"
@@ -18,14 +18,14 @@ export default function ProductDisp(){
                     />
                 </div>
                 <div className="flex flex-col">
-                    <div>
-                        <TextHeader text="Product Name" />
+                    <TextHeader text="Product Name" />
+                    <div className="flex flex-col justify-between h-28">
                         <p className="text-2xl font-bold">Price</p>
                         <Counter />
                         <Button label="Add to cart" />
                     </div>
                     <div>
-                        <p className="font-bold">Details</p>
+                        <p className="font-bold mt-8">Details</p>
                         <p>lorem ipsum color</p>
                     </div>
                 </div>
