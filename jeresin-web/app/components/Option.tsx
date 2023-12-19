@@ -1,34 +1,24 @@
+import Image from "next/image"
 
-import { useState } from 'react'
-import { Listbox } from '@headlessui/react'
-
-export default function Option(props: any){
-    const option = "Option"
-    
-    const choices = [
-        {id: 1, name: "Necklace"},
-        {id: 2, name: "Bracelet"}
-    ]
-    
-    const [selectedChoice, setSelectedChoice] = useState(choices[0])
+export default function Option({opt}: any){
 
     return(
-        <div className="text-loulou">
-            <h3 className="font-bold text-lg">{option}</h3>
-            <div className="flex flex-row justify-around w-80 font-semibold outline rounded-md">
-            <Listbox value={selectedChoice} onChange={setSelectedChoice}>
-                <Listbox.Button>{setSelectedChoice.name}</Listbox.Button>
-                <Listbox.Options>
-                    {choices.map((choice) => (
-                        <Listbox.Option
-                            key={choice.id}
-                            value={choice.name}
-                        >
-                            {choice.name}
-                        </Listbox.Option>
-                    ))}
-                </Listbox.Options>
-            </Listbox>
+        <div className="w-2/3 align-center">
+            <div className='font-semibold'>
+                <p>Text</p>
+            </div>
+            <div className='flex bg-loulou'>
+                <Image
+                    className="rounded-md bg-center object-cover w-64 h-64"
+                    src={opt.img}
+                    width={500}
+                    height={500}
+                    alt=""
+                />
+                <div className='text-white font-bold'>
+                    <p>{opt.name}</p>
+                    <p>{opt.price}</p>
+                </div>
             </div>
         </div>
     )
