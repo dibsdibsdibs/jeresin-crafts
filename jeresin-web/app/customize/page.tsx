@@ -13,21 +13,21 @@ export default function Customize(){
                 {id: "c1-2", name: "Bracelet", img: "/col-aqua/2.jpg", price: 1, unavailable: false}
             ]
         },
-/*         {
+        {
             name: "Chain",
             id: "c2",
             specifics: [
                 {id: "c2-1", name: "Gold Stainless Chain", img: "/col-aqua/3.jpg", price: 79, unavailable: false},
                 {id: "c2-2", name: "Black Leather Cord", img: "/col-aqua/4.jpg", price: 79, unavailable: false}
             ]
-        }, */
+        },
     ]
 
     return(
         <div>
             <TextHeader text="CUSTOMIZE" />
             <div>
-                <div>
+                <div className="flex flex-col justify-center align-center">
                     {
                         options.map((option:any) => (
                             <Modification modifications={option} key={option.id} />

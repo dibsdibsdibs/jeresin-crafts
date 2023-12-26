@@ -3,22 +3,19 @@ import Image from "next/image"
 export default function Option({opt}: any){
 
     return(
-        <div className="w-2/3 align-center">
-            <div className='font-semibold'>
-                <p>Text</p>
-            </div>
-            <div className='flex bg-loulou'>
+        <div className="flex flex-row align-center justify-around p-5 bg-loulou">
+            <div className="h-52 w-52">
                 <Image
-                    className="rounded-md bg-center object-cover w-64 h-64"
+                    className="rounded-md object-cover"
                     src={opt.img}
-                    width={500}
-                    height={500}
+                    width={250}
+                    height={250}
                     alt=""
                 />
-                <div className='text-white font-bold'>
-                    <p>{opt.name}</p>
-                    <p>{opt.price}</p>
-                </div>
+            </div>
+            <div className='text-white font-bold'>
+                <p>{opt.name}</p>
+                <p>{opt.price}</p>
             </div>
         </div>
     )

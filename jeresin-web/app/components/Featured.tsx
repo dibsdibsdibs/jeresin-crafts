@@ -1,5 +1,4 @@
 import TextHeader from "./TextHeader"
-import Button from "./Button"
 import Product from "./Product"
 
 export default function Featured(){
